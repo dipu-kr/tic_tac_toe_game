@@ -28,6 +28,7 @@ const checkWin = () => {
     ) {
       document.querySelector(".info").innerText =
         boxtext[e[0]].innerText + " won";
+
       isGameOver = true;
 
       document
@@ -57,6 +58,7 @@ Array.from(boxes).forEach((element) => {
 
 // Add onClick listener to reset button
 reset.addEventListener("click", () => {
+  // document.getElementById("reset").style.display = "block";
   let boxtexts = document.querySelectorAll(".boxtext");
   Array.from(boxtexts).forEach((element) => {
     element.innerText = "";
